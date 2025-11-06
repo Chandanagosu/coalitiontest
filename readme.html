@@ -1,112 +1,92 @@
-A responsive frontend web application that displays patient health data (focused on Jessica Taylor) using HTML, CSS, JavaScript, and Chart.js.
-Originally designed for the Coalition Technologies Frontend Developer Skills Test, this project fetches patient data and visualizes blood pressure trends over time.
+🧾 README.md
+# 🧰 Custom WordPress Theme Development & Template Optimization
 
-🚀 Features
+This project demonstrates **custom WordPress theme development** and **template optimization**.  
+It includes modifications to core templates, PHP logic, and dynamic content handling using WordPress hooks and template hierarchy.
 
-Fetches patient data (name, age, gender, contact info) dynamically
+---
 
-Displays blood pressure statistics using Chart.js line chart
+## 🚀 Features
+- Custom WordPress theme built on WordPress 6.8.3  
+- Optimized template structure for faster rendering  
+- PHP-based custom functionalities  
+- SQL database integration (`coalitiontest.sql`)  
+- Fully functional setup for local development (XAMPP)  
 
-Responsive, clean, and minimal UI design
+---
 
-Local JSON fallback support (works offline)
+## 🛠️ Tech Stack
+- **Language:** PHP, HTML5, CSS3  
+- **CMS:** WordPress 6.8.3  
+- **Database:** MySQL  
+- **Tools:** XAMPP, Visual Studio Code, phpMyAdmin  
 
-Built with pure HTML, CSS, and vanilla JavaScript
+---
 
-🧩 Tech Stack
-Category	Tools
-Frontend	HTML5, CSS3, JavaScript (ES6)
-Charts	Chart.js
+## ⚙️ Local Setup Instructions
 
-Data	JSON (local) / REST API (when available)
-Development	VS Code + Live Server
-📂 Project Structure
-coalition-test/
-│
-├── index.html
-├── css/
-│   └── styles.css
-├── js/
-│   └── app.js
-├── data.json
+### 1. Clone the repository
+```bash
+git clone https://github.com/Chandanagosu/coalitiontest.git
+
+2. Move the folder into your XAMPP htdocs directory
+C:\xampp\htdocs\coalitiontest
+
+3. Import Database
+
+Open phpMyAdmin
+
+Create a new database named coalitiontest
+
+Import the file coalitiontest.sql from the project directory
+
+4. Run the WordPress site
+
+Open your browser and go to:
+
+http://localhost/coalitiontest
+
+🧠 Project Summary
+
+This project focuses on:
+
+Improving WordPress theme performance
+
+Customizing existing templates and PHP files
+
+Managing content dynamically through WordPress functions and hooks
+
+📂 Folder Structure
+coalitiontest/
+├── wp-admin/
+├── wp-content/
+├── wp-includes/
+├── coalitiontest.sql
+├── wp-config.php
+├── index.php
 └── README.md
 
-⚙️ Setup Instructions
+👩‍💻 Author
 
-Clone the Repository
+Venkata Naga Chandana Gosu
+📍 Andhra Pradesh, India
+🌐 LinkedIn
 
-git clone https://github.com/<your-username>/patient-dashboard.git
-cd patient-dashboard
+💻 GitHub
 
+🏷️ License
 
-Open in VS Code
-
-code .
-
-
-Run the Project
-
-Install the VS Code extension Live Server
-
-Right-click on index.html → “Open with Live Server”
-
-View in Browser
-Your project will open automatically at:
-
-http://127.0.0.1:5500/index.html
-
-🧠 How It Works
-
-The app fetches patient data from a JSON file (data.json)
-
-Dynamically updates DOM elements with name, age, gender, phone, and email
-
-Uses Chart.js to display Systolic and Diastolic blood pressure trends
-
-🩸 Sample Data (Jessica Taylor)
-{
-  "name": "Jessica Taylor",
-  "age": 28,
-  "gender": "Female",
-  "phone_number": "(123) 456-7890",
-  "email": "jessica.taylor@example.com"
-}
-
-🧰 Local Development Notes
-
-If the Coalition API asks for login credentials, use the local file:
-
-fetch("./data.json");
+This project is open source and available under the MIT License
+.
 
 
-This version works fully offline and mimics real API data.
+---
 
-📸 Preview
-Patient Dashboard - Jessica Taylor
----------------------------------
-Age: 28
-Gender: Female
-Phone: (123) 456-7890
-Email: jessica.taylor@example.com
-
-
-Chart:
-🩺 Blood Pressure Over the Years
-(Line graph for systolic & diastolic values)
-
-✨ Future Improvements
-
-Add real-time data updates
-
-Include multiple patient profiles
-
-Integrate dark/light mode themes
-
-Add accessibility (ARIA) enhancements
-
-🧑‍💻 Author
-
-Gosu Venkata Naga Chandana
-📧 chandanagosu@gmail.com
-
-📍 Hyderabad, India
+### ✅ Steps:
+1. Create a new file in your repo root folder → `README.md`  
+2. Paste the above text  
+3. Save it and run:
+   ```bash
+   git add README.md
+   git commit -m "Added README file"
+   git push
